@@ -14,11 +14,11 @@ var config = {
 
 
 app.use(express.query());
-// app.use('/', wechat(config, function (req, res, next) {
-//   var message = req.weixin;
-//   console.log(message);
-//   res.reply("Hello");
-// }));
+app.use('/', wechat(config, function (req, res, next) {
+  var message = req.weixin;
+  console.log(message);
+  res.reply("Hello");
+}));
 /*
  * 响应微信测试服务器的连接验证
  **/
