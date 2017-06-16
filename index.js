@@ -14,11 +14,11 @@ var config = {
 
 
 app.use(express.query());
-app.use('/', wechat(config, function (req, res, next) {
-  var message = req.weixin;
-  console.log(message);
-  res.reply("Hello");
-}));
+// app.use('/', wechat(config, function (req, res, next) {
+//   var message = req.weixin;
+//   console.log(message);
+//   res.reply("Hello");
+// }));
 /*
  * 响应微信测试服务器的连接验证
  **/
@@ -26,7 +26,8 @@ app.get('/', function(req, res){
    var echostr = req.query.echostr,
        signature = req.query.signature;
    console.log('signature',signature);
-   res.send(req.query.echostr);
+   res.send('hello123');
+   //res.send(req.query.echostr);
 });
 /*
  * 测试获取token命令
