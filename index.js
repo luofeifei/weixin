@@ -21,7 +21,7 @@ app.use('/', wechat(config, function (req, res, next) {
   var message = req.weixin;
   console.log("-----------");
   console.log(message);
-  res.reply("Hello");
+  res.reply("罗思专用！");
 }));
 /*
  * 响应微信测试服务器的连接验证
