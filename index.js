@@ -2,7 +2,7 @@ var http = require('http');
 var API = require('wechat-api');
 var appID = 'wx640d51f64384c56e';
 var appSecret = '4c9090fd46e69f987d67c5902aedf167';
-var TOKEN='gTMh5R7ssUP5rpkm5nHENtkRzp5hUh05'; 
+var TOKEN='weixin'; 
 var verify = require('./verifyURL');
 var qs=require('qs');
 var api = new API(appID,appSecret);
@@ -12,13 +12,14 @@ var wechat = require('wechat');
 var config = {
   appid: appID,
   appsecret: appSecret,
-  token: 'token'
+  token: 'weixin'
 };
 
 
 app.use(express.query());
 app.use('/', wechat(config, function (req, res, next) {
   var message = req.weixin;
+  console.log("-----------");
   console.log(message);
   res.reply("Hello");
 }));
