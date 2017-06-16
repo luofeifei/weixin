@@ -1,0 +1,19 @@
+{
+  "name": "weixin",
+  "version": "1.0.0",
+  "description": "Weixin API Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luofeifei/weixin.git"
+  },
+  "author": "luofeifei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luofeifei/weixin/issues"
+  },
+  "homepage": "https://github.com/luofeifei/weixin#readme"
+}
