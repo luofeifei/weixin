@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/luofeifei/weixin#readme",
   "dependencies": {
+    "express": "^4.15.3",
     "wechat": "^2.1.0",
     "wechat-api": "^1.32.1"
   }
